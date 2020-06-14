@@ -1,4 +1,4 @@
-package com.example.attendance;
+package com.activity.attendance;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,11 +13,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import com.bean.FacultyBean;
+import com.db.DBAdapter;
 
 public class LoginActivity extends Activity {
 
@@ -106,7 +106,7 @@ public class LoginActivity extends Activity {
                         Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        Toast.makeText((getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Login failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
